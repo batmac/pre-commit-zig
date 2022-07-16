@@ -1,0 +1,14 @@
+- id: zig-fmt
+  name: Run zig fmt
+  description: This hook runs zig fmt on your .zig files.
+  entry: run-zig-fmt.sh
+  language: script
+  types: ['file']
+  files: '\.zig$'
+- id: zig-fmt-check
+  name: Run zig fmt --check
+  description: This hook runs zig fmt --check on your .zig files.
+  entry: zig fmt --check
+  language: system
+  types: ['file']
+  files: '\.zig$'

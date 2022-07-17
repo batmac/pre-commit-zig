@@ -31,7 +31,6 @@ repos:
 - `zig-build` - ensure `zig build` passes in your repository.
 - `zig-build-test` - ensure `zig build test` passes in your repository.
 
-
 ## Credits
 
 - [dnephin/pre-commit-golang](https://github.com/dnephin/pre-commit-golang)

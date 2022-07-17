@@ -20,12 +20,17 @@ repos:
     rev: master
     hooks:
       - id: zig-fmt
+      - id: zig-build
+      - id: zig-build-test
 ```
 
 ## Available hooks
 
-- `zig-fmt` - runs `zig fmt`
-- `zig-fmt-check` - runs `zig fmt --check` (doesn't change files)
+- `zig-fmt` - runs `zig fmt` on the changed files.
+- `zig-fmt-check` - runs `zig fmt --check` (doesn't modify files).
+- `zig-build` - ensure `zig build` passes in your repository.
+- `zig-build-test` - ensure `zig build test` passes in your repository.
+
 
 ## Credits
 

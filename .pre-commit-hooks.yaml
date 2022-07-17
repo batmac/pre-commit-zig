@@ -3,12 +3,26 @@
   description: This hook runs zig fmt on your .zig files.
   entry: run-zig-fmt.sh
   language: script
-  types: ['file']
+  types: [file]
   files: '\.zig$'
 - id: zig-fmt-check
   name: Run zig fmt --check
   description: This hook runs zig fmt --check on your .zig files.
   entry: zig fmt --check
   language: system
-  types: ['file']
+  types: [file]
   files: '\.zig$'
+- id: zig-build-test
+  name: Run zig build test
+  description: This hook runs zig build test.
+  entry: zig build test
+  language: system
+  types: [file]
+  pass_filenames: false
+- id: zig-build
+  name: Run zig build
+  description: This hook runs zig build.
+  entry: zig build
+  language: system
+  types: [file]
+  pass_filenames: false

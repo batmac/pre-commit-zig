@@ -26,3 +26,11 @@
   language: system
   types: [file]
   pass_filenames: false
+
+- id: docker-zig-fmt-check
+  name: Run zig fmt --check in docker
+  description: This hook runs zig fmt --check on your .zig files via docker.
+  entry: ghcr.io/batmac/zig zig fmt --check
+  language: docker_image
+  types: [file]
+  files: '\.zig$'

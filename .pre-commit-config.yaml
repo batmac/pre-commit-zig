@@ -25,7 +25,7 @@ repos:
       - id: mixed-line-ending
         args: ['--fix=lf']
   - repo: https://github.com/zricethezav/gitleaks
-    rev: v8.9.0
+    rev: v8.10.2
     hooks:
       - id: gitleaks
   - repo: https://github.com/shellcheck-py/shellcheck-py
